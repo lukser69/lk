@@ -38,7 +38,7 @@ const getOrders = async () => {
     orders.value = response?.response?.data?.orders;
     // console.log(response);
   } catch (e) {
-    console.error(e);
+    // console.error(e);
   }
 };
 
