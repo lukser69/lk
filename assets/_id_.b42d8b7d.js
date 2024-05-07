@@ -1,0 +1,1 @@
+import{n as s,q as n,o as t,s as r,w as c,d as p,t as u,v as e}from"./entry.a2ebdb4d.js";import{_ as d}from"./index.vue.06d5670a.js";const i=s({__name:"order",setup(_){const a=n().params;return(o,m)=>(t(),r(e(d),{class:"order-card"},{default:c(()=>[p(u(e(a).id),1)]),_:1}))}});const x=s({__name:"[id]",setup(_){return(a,o)=>(t(),r(e(i)))}});export{x as default};
