@@ -16,3 +16,13 @@
     }
   }
 }
+
+.btn-back {
+  margin-bottom: 15px;
+}
+
+@include start-at("lg") {
+  .btn-back {
+    display: none;
+  }
+}

@@ -1,14 +1,19 @@
 <template>
-  <ul v-if="orders?.length" class="orders-list">
-    <li v-for="order in orders" :key="order.id" class="orders-list__item">
-      <StatusCard @click="goToOrder(order.id)">{{ order.id }}</StatusCard>
-    </li>
-  </ul>
+  <div>
+    <Button class="btn-back" color="purple" width="full" size="l">Назад</Button>
 
-  <Empty v-else>Заказов еще нет</Empty>
+    <ul v-if="orders?.length" class="orders-list">
+      <li v-for="order in orders" :key="order.id" class="orders-list__item">
+        <StatusCard @click="goToOrder(order.id)">{{ order.id }}</StatusCard>
+      </li>
+    </ul>
+
+    <Empty v-else>Заказов еще нет</Empty>
+  </div>
 </template>
 
 <script setup lang="ts">
+import { Button } from "@/shared/ui/button";
 import { StatusCard } from "@/shared/ui/status-card";
 import { Empty } from "@/shared/ui/empty";
 import { internalAPIFetch } from "@/shared/api/internal/instance";
