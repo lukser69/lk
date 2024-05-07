@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "npx nuxi dev --dotenv .env.local",
+    "deploy": "gh-pages -d dist",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -33,6 +34,7 @@
     "@vueuse/nuxt": "^10.5.0",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
+    "gh-pages": "^6.1.1",
     "html-minifier": "^4.0.0",
     "nanoid": "^5.0.4",
     "pinia": "^2.1.7",

@@ -71,6 +71,7 @@ export default defineNuxtConfig({
       ]
     },
     baseURL: "/lk/",
+    buildAssetsDir: 'assets',
     cdnURL: "/lk/"
   },
 
